@@ -5,7 +5,7 @@
 
 The input parameters can be changed using the command line :
 ~~~
-yolo_aug.py -i <input_dir> -o <output_dir>
+multi_dcm_to_png.py -i <input_dir> -o <output_dir>
 ~~~~~~~~~
 For running example :
 ~~~~
