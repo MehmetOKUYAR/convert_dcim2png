@@ -11,7 +11,16 @@ def dcm2png(dicom_dosya_yolu):
     # dicom resim çekilmiş ct görüntüsü hastaya ait bütün bilgileri içermektedir.
     # hastaya ait bilgilerede ulaşmak için (yaş,isim vb.) kodu düzenleyebilirsiniz
     dicom_resim= PDCM.read_file(dicom_dosya_yolu)
+    # print ile dicom resimde hastaya ait bilgilerini görebilirsiniz
     #print(dicom_resim)
+
+    # örnek olarak isim bilgisine ulaşmak için
+    # 0x00100010 dicom dosyasında isim bilgisinin bulunduğu adres
+    # value ile de bu adresin değerine ulaşılır
+    # başka bilgilere ulaşmak için adresi değiştirip value ile ulaşabilirsiniz
+    #isim = dicom_resim.get(0x00100010).value
+    #print("isim: ",isim)
+    
     satirlar=dicom_resim.get(0x00280010).value
     sutunlar=dicom_resim.get(0x00280011).value
 
