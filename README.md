@@ -1,5 +1,8 @@
 # Convert_Dcim2Png
  You can use dcim images to convert them to png format
+ 
+ dcim image also contains all the patient's information. You can also access them with code
+ 
 
 ### Run the application
 
